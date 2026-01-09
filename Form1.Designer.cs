@@ -72,6 +72,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.txtNetPrice = new System.Windows.Forms.TextBox();
             this.txtTaxAmount = new System.Windows.Forms.TextBox();
@@ -83,7 +84,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
-            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -394,7 +394,7 @@
             this.txtPantPrice.Name = "txtPantPrice";
             this.txtPantPrice.Size = new System.Drawing.Size(50, 20);
             this.txtPantPrice.TabIndex = 11;
-            this.txtPantPrice.Text = "0";
+            this.txtPantPrice.Text = "1.95";
             this.txtPantPrice.TextChanged += new System.EventHandler(this.txtPantPrice_TextChanged);
             // 
             // txtShirtPrice
@@ -403,7 +403,7 @@
             this.txtShirtPrice.Name = "txtShirtPrice";
             this.txtShirtPrice.Size = new System.Drawing.Size(50, 20);
             this.txtShirtPrice.TabIndex = 10;
-            this.txtShirtPrice.Text = "0";
+            this.txtShirtPrice.Text = "1.25";
             this.txtShirtPrice.TextChanged += new System.EventHandler(this.txtshirtPrice_TextChanged);
             // 
             // cmbFormalWear
@@ -459,6 +459,7 @@
             this.cmbSuits.Size = new System.Drawing.Size(121, 21);
             this.cmbSuits.TabIndex = 6;
             this.cmbSuits.Text = "None";
+            this.cmbSuits.SelectedIndexChanged += new System.EventHandler(this.cmbSuits_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -533,6 +534,16 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Order Summary";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(230, 124);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(19, 16);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "%";
             // 
             // btnClose
             // 
@@ -628,16 +639,6 @@
             this.skinEngine1.SerialNumber = "";
             this.skinEngine1.SkinFile = "C:\\Program Files (x86)\\Sunisoft\\IrisSkin\\Skins\\Steel\\SteelBlack.ssk";
             this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(230, 124);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 16);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "%";
             // 
             // Form1
             // 

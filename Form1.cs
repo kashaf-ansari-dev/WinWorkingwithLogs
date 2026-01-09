@@ -194,5 +194,31 @@ namespace WinGeorgetownCleaningService
 
 
         }
+
+        private void cmbSuits_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedSuit = cmbSuits.SelectedItem.ToString();
+            decimal unitPrice;
+
+            // set the unit price based on the selected item in the combo box
+            switch (selectedSuit)
+            {
+                case "Men's Suit 2Pc":
+                    unitPrice = 1.25m;
+                    break;
+                case "Women's Suit 3Pc":
+                    unitPrice = 1.35m;
+                    break;
+                case "Women's Suit 2Pc":
+                    unitPrice = 1.25m;
+                    break;
+                default:
+                    unitPrice = 0.00m;
+                    break;
+            }
+
+            // set the text of the unit price text box to the unit price
+            txtSuitsPrice.Text = unitPrice.ToString("C");
+        }
     }
 }
